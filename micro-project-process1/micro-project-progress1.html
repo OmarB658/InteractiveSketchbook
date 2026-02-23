@@ -11,14 +11,29 @@
         in front of the unlucky player. While the unlucky player struggles to move and ultimately eventually a complete reset, the lucky player gradually grows larger to the top of the screen.
         This visual gap causes a systemic frustration because the user's effort only benefits one side of the screen.
     </p><p>
-        let luckyP = 500; <p>
-            
-        </p>
-        let unlickyP = 500;
-
-
+    let luckyP = 500; <p>
     </p>
+    let unluckyP = 500;<p>
+
+    What changes the variable: A mouse click would be the thing that changes the variable
     
+    
+    <p>
+    What it controls: A mouse click triggers a random() function.
+    If the random number is within a certain range which is 50%, the lucky player grows
+    If it's within a 10% range, the unlucky player grows but shrinks completely if it's within 5%.
+    </p>
+
+    Base build: <p>
+    State 1: Both circles sit side by side on opposite ends of the screen
+    <p>
+    State 2: Once the user clicks their mouse, the random() function is triggered and there's a 50% chance for circle 1 to grow, and a 10% chance of circle 2 to grow
+    </p>
+    Sturctural Growth: <p>
+        Over the next three weeks I plan to add time-based decay. Each circle will slowly shrink over time which symbolizes spending money over time, then going back to the casino after a while once the user clicks again.
+        I also plan a slight shaking effect as either circle grows to a big enough size which would add instability. This makes the success feel more aggresive and the failiure stand out more.
+        Lastly, I want to add a reset button that would reset the circles back to their original size and position. This would allow the user to start over and see if they can get a different outcome.
+        </p>    
     <!-- p5 core -->
 <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 <!-- p5 sketch -->
