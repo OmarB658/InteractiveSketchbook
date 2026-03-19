@@ -34,7 +34,6 @@ function betScreen() {
   text("Instructions:", width/2, instY);
   text("On the screen there will be two circles, everytime you click oin the screen they both have a chance to grow.\n You will be predicting the size each circle is at the end of the timer. \n One of the circles has a higher chance to grow than the other.\n First you will be betting on the lucky circle, then the unlucky circle.", width/2, instY + 20);
 
-
   
   fill(255);
   textAlign(CENTER);
