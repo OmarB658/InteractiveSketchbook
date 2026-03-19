@@ -24,6 +24,18 @@ function draw() {
 }
 
 function betScreen() {
+
+  
+  fill(200); // Slightly dimmed white
+  textSize(14);
+  textAlign(CENTER);
+  
+  let instY = height / 2 + 150; // Position it below the input area
+  text("Instructions:", width/2, instY);
+  text("On the screen there will be two circles, everytime you click oin the screen they both have a chance to grow.\n You will be predicting the size each circle is at the end of the timer. \n One of the circles has a higher chance to grow than the other.\n First you will be betting on the lucky circle, then the unlucky circle.", width/2, instY + 20);
+
+
+  
   fill(255);
   textAlign(CENTER);
   
@@ -66,6 +78,8 @@ function playScreen() {
   fill(255);
   textSize(16);
   text("Time " + timer, width/2, 50);
+  text("Press R to restart", 995, 100);
+
 
   text("Winnings: " + floor(luckyCircle), width * 0.35, height / 2 + 150);
   text("Winnings: " + floor(unluckyCircle), width * 0.65, height / 2 + 150);
@@ -143,7 +157,12 @@ function keyPressed() {
     timer = floor(random(5, 20));
     mode = "BET";
   }
+
+    if( key === 'u' || key === 'U') {
+    mode = 'RESULT';
+  }
 }
+
 
 function mousePressed() {
   if (mode !== "PLAY") return;
