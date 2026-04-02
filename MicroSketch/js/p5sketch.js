@@ -1,8 +1,8 @@
 let luckyCircle = 50;   
 let unluckyCircle = 50; 
-let luckyBet = "";    // Variable for Lucky bet
-let unluckyBet = "";  // Variable for Unlucky bet
-let bettingStep = 0;  // 0 = betting for Lucky, 1 = betting for Unlucky
+let luckyBet = "";
+let unluckyBet = "";
+let bettingStep = 0;  
 let timer;
 let mode = "BET"; 
 
@@ -26,11 +26,11 @@ function draw() {
 function betScreen() {
 
   
-  fill(200); // Slightly dimmed white
+  fill(200);
   textSize(14);
   textAlign(CENTER);
   
-  let instY = height / 2 + 150; // Position it below the input area
+  let instY = height / 2 + 150;
   text("Instructions:", width/2, instY);
   text("On the screen there will be two circles, everytime you click oin the screen they both have a chance to grow.\n You will be predicting the size each circle is at the end of the timer. \n One of the circles has a higher chance to grow than the other.\n First you will be betting on the lucky circle, then the unlucky circle.", width/2, instY + 20);
 
@@ -77,7 +77,7 @@ function playScreen() {
   fill(255);
   textSize(16);
   text("Time " + timer, width/2, 50);
-  text("Press R to restart", 995, 100);
+  text("Press R to restart", width/2, 100);
 
 
   text("Winnings: " + floor(luckyCircle), width * 0.35, height / 2 + 150);
@@ -98,7 +98,7 @@ function playScreen() {
   text("• 50% chance: +10", xPos, yPos + 20);
   text("• 1% chance: +1000", xPos, yPos + 40);
 
-  yPos += 100; // Space between sections
+  yPos += 100;
 
   text("Unlucky circle growth chances:", xPos, yPos);
   text("• 25% chance: +10", xPos, yPos + 20);
