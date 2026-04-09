@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=""utf-8">
+    <title>template code</title>
+</head>
+<body>
+    
+I’m choosing to audit my micro project sketch page. I believe my micro sketch does communicate where the user is because it’s clear when the page switches from the betting stage to the clicking stage and then to the results screen. It wasn’t obvious before what the interactions are and what is interactive, but once I added some instructions on each page that made it a little more clear what the objective of the user is and what can be done. However I believe a big weakness is a lack of input feedback in the gambling section. Obviously you’ll be able to see the circles grow and shrink, but there’s also a chance that nothing happens and this might confuse the user as to why clicking didn’t do anything. It would be better if there’s an immediate visual signal like maybe a ripple or a clicking effect once the user clicks.
+<p>
+
+The main affordances on each page is typing on the betting page, clicking on the play stage, and pressing R to restart on the results page. All the actions on each page are signified by simple instructions on each page. In the play screen it says to click anywhere so that makes it clear that nothing specifically on that page and you can just click anywhere. There is a hidden command where you can press U to skip to the results screen immediately and I didn’t include that anywhere so it’s very unclear that this is even an option to begin with.
+</p>
+The user moves through each page by simply doing the instructions that each page presents. The layout reflects the system’s hierarchy by placing the two competing systems side-by-side, allowing for immediate comparative mapping. I believe the hierarchy is clear: the timer is an important aspect placed at the top, the primary items which are the circles are in the center, and the secondary data (Bets) is at the bottom.
+</p>
+The interactions feel unpredictable in the play stage but that is by design so I believe it works a decent amount to fulfill its purpose.
+</p>
+The first rule I believe my micro sketch violates is Rule 1: Visibility of System Status. While the user can see the circles grow, the system fails to communicate when the user clicks. Because your growth logic is probability-based, the user often clicks the mouse and nothing happens visually. This would be fixed by adding any sort of effect whenever the user clicks so there’s a little more feedback and it feels a little more satisfying.
+</p>
+The second rule is Rule 2: Match Between the System and the Real World. Other than the color of the circles, there’s no indignation as to which one’s lucky, which one’s unlucky and what everything even represents. Even at the start before the user clicks anything, the lucky circle isn’t fully green yet so it might be hard to tell which is which. This would be fixed by making the lucky circle green from the start. Another fix would be to do away with the circle idea as a whole and go for something more gambling-esque. It feels odd that everything is simply represented by circles and could make the theme stronger if they weren’t.
+</p>
+
+
+
+    <!-- p5 core -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+<!-- p5 sketch -->
+<script src="js/p5Sketch.js"></script>
+
+</body>
+
+
+</html> 
