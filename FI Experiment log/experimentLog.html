@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sketch 9</title>
+</head>
+
+
+<body>
+
+I feel like the translation of turning the original Figma design to CSS worked out pretty well. For the most part, it looks pretty similar to the prototype I made on Figma. The navigation bar, project layout, button styling, and overall visual hierarchy were straightforward to recreate because the design already had clearly separated sections. Embedding the actual micro project was the part I was most scared of but I’m glad how it turned out. I didn’t think I would initially be able to embed a playable, working version of my full micro sketch game. The only thing that didn’t translate as well was the specific padding of the original Figma file. It was very difficult to get the specific padding I had in my Figma file.
+<p>
+What broke was the padding as mentioned before. Unlike Figma where I was able to line text boxes and assets up super easily, it wasn’t as easy in CSS/HTML. The game iframe initially created scrollbars and scaling issues because the embedded p5.js sketch had its own sizing behavior separate from the webpage. 
+</p>
+What surprised me was that this wasn’t as hard as I thought it would be originally. At the start of this assignment, I was really scared about translating Figma to HTML since I’ve never done it before and I’ve never been very good with any previous coding classes to begin with. However, it turned out to be kind of intuitive once I figured out the basics, and there wasn’t anything that I couldn’t figure out by googling. I also didn’t think it would even be possible to recreate the Figma prototype with such accuracy but I was happy with how it came out in the end.
+</p>
+The coding process exposed how dependent my original design was on a fixed desktop layout. In Figma, the interface appeared balanced because it existed at one screen size, but code forced me to think about how the structure behaves dynamically. The project also exposed that I originally treated spacing as mostly visual rather than structural. In code, alignment depends on containers, widths, padding systems, and responsive behavior rather than simply moving objects visually. The iframe implementation also exposed the assumption that embedded content would automatically scale correctly, which was not the case once the game was placed inside the webpage.
+</p>
+With more time, I would improve the responsiveness of the layout and make the mobile version more refined. I would spend more time simplifying the CSS structure so that spacing and alignment adjustments become easier to manage. I would also improve the scaling behavior of the embedded game so it adapts more cleanly to different screen sizes. Visually, I would refine typography spacing and create more consistency between sections of the page. I would also likely experiment with more advanced responsive layouts and navigation behavior once the basic structure became more stable. 
+</p>
+
+  <img src="img/desktop1.png" alt="Desktop1">
+  <img src="img/mobile1.png" alt="Mobile1">
+  <img src="img/mobile2.png" alt="Mobile2">
+
+    
+    
+    <p></p>
+    <!-- p5 core -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+<!-- p5 sketch -->
+<script src="js/p5sketch.js"></script>
+
+</body>
+
+</html> 

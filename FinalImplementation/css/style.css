@@ -240,12 +240,71 @@ h1 {
     margin: 0 auto;
 }
 
+body {
+    color: white;
+}
+
 /* media query is to add code specific to mobile devices, any thin included within the query will 
 only apply to screen sizes less that the max-width, in this case 600px */
 
 @media (max-width: 600px) {
+
     html {
         font-size: 80%;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .site-header {
+        padding: 0 20px;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+    .nav-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .project-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .rules-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-buttons {
+        align-items: stretch;
+    }
+
+    .green-button,
+    .outline-button {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    .microSketch {
+        padding: 20px 10px 0;
+    }
+
+    .microProject {
+        width: 100vw;
+        max-width: 100%;
+        height: 500px;
+    }
+
+    .bottom-nav {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
 
 }
